@@ -25,3 +25,28 @@
 h3 {
   font-size: 1.5rem;
 }
+
+.card {
+  height: 350px; /* Set the height of the card */
+  margin-bottom: 20px; /* Add some margin between the cards */
+  overflow: scroll; /* Hide any content that overflows the card */
+  background-color: rgb(27, 91, 77); /* Set the background color to a light brown */
+  color: whitesmoke; /* Set the text color to a light brown */
+}
+
+.card-title {
+  margin-bottom: 15px; // Add a margin between the title and the heading underneath
+}
+
+.card-subtitle {
+  margin-bottom: 10px; // Add margin between the subtitle and text underneath
+  font-style: italic; // Make the text italic
+}
+
+.card-body {
+  padding: $card-spacer-y $card-spacer-x;
+}
+
+.card-body a {
+  color: burlywood; // Set the link color to a light brown
+}
