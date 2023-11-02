@@ -1,8 +1,12 @@
 {% extends '_templates/base.njk' %}
 
-{% block page_title %}Index page title{% endblock %}
+{% block page_title %}
+  Index page title
+{% endblock %}
 
-{% block page_description %}The index search description for this page goes here.{% endblock %}
+{% block page_description %}
+  The index search description for this page goes here.
+{% endblock %}
 
 {% block content %}
 <div class="container">
@@ -24,7 +28,7 @@
   {% for store in bookstores.stores %}
     <h3><a href="{{ store.url }}" target="_blank">{{ store.name }}</a></h3>
     <p>{{ store.address}}, {{ store.city }}, {{ store.state }} {{ store.zip }}</p>
-    <hr>
+  <hr>
   {% endfor %}
 </div>
 {% endblock %}
